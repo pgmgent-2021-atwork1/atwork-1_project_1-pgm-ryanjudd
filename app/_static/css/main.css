@@ -22,7 +22,7 @@
   font-family: "SCRIPTKEREN";
   src: url("../fonts/SCRIPTKEREN.woff2") format("woff2"),
     url("../fonts/SCRIPTKEREN.woff") format("woff");
-  font-weight: 400;
+  font-weight: 300200;
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00F7;
@@ -35,8 +35,15 @@
 }
 
 body {
+  font-family: "SCRIPTKEREN";
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bilingual Serif Font";
 }
 
 h1 {
