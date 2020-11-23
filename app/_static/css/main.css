@@ -35,7 +35,6 @@
 }
 
 body {
-  font-family: "SCRIPTKEREN";
   font-size: 1.2rem;
   line-height: 2rem;
 }
@@ -65,9 +64,32 @@ header {
 }
 
 .header__info,
-.header__links {
+.header__links,
+.h__images {
   display: flex;
   flex-wrap: wrap;
+}
+
+.header__info {
+  font-size: .7rem;
+  justify-content: space-between;
+}
+
+.header__links {
+  display: none;
+}
+
+.h__images {
+  justify-content: space-between;e
+}
+
+.h__logo {
+  width: 5rem;
+}
+
+.svg__burger {
+  width: 5rem;
+  
 }
 
 article {
@@ -93,8 +115,14 @@ article:nth-child(2) {
 
 .a__img {
   max-width: 100%;
-  margin-top: -2rem;
   padding-bottom: 1rem;
+  margin-bottom: -1.6rem;
+}
+
+.i__img {
+  max-width: 100%;
+  padding-bottom: 1rem;
+  margin-top: -1.6rem;
 }
 
 .intro p {
@@ -113,14 +141,40 @@ article:nth-child(2) {
 
 .button {
   border: solid 0.1rem #93c683;
-  color: #93c683;
   border-radius: 0.5rem;
   padding: 0.5rem;
   text-decoration: none;
+  color: #fff8e1;
+}
+
+.button__red {
+  border-color: #c11462;
+  color: #c11462;
 }
 
 .js__flowers {
   padding-top: 5rem;
+}
+
+.a__green {
+  background-color: #00372b;
+  color: #d3f4da;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  
+}
+
+article img {
+  margin-bottom: -1rem;
+}
+
+.svg__arrow {
+  width: 2rem;
+  height: 1rem;
+}
+
+.div__info {
+  font-size: 1rem;
 }
 
 footer {
@@ -156,6 +210,15 @@ footer a {
 /* currently only footer*/
 footer li:nth-last-child(-n + 2) a {
   text-transform: uppercase;
+  color: #93c683;
+}
+
+footer li:nth-last-child(-n+2) {
+  /*border: solid 0.1rem #93c683;
+  color: #93c683;
+  border-radius: 0.5rem;
+  /*padding: .8rem 1.5rem 0rem 1.5rem;
+  text-decoration: none*/
 }
 
 .footer__bottom {
