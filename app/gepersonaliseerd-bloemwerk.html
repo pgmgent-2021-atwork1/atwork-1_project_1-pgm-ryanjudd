@@ -73,21 +73,22 @@
         </p>
       </article>
 
-      <article>
+      <article class="a--allign text-left">
         <p>
           Samen zoeken we naar de beste oplossing om met jouw eigen inbreng van
           een decoratieve vaas, schaal, pot … tot een mooi bloemstuk te komen.
         </p>
+
         <p>
           Dus, haal die prachtige schaal, mooie vaas of andere vorm weer eens
           boven en na het beluisteren van uw wensen geven we er samen terug een
           tweede leven aan.
         </p>
       </article>
-      <article>
+      <article class="a--allign">
         <h2>Enkele voorbeelden</h2>
         <p>Bekijk enkele referentiefotos</p>
-        <div>
+        <div class="example__images flex">
           <img src="_static/images/gepersonaliseerd/1.png" alt="" />
           <img src="_static/images/gepersonaliseerd/2.png" alt="" />
           <img src="_static/images/gepersonaliseerd/3.png" alt="" />
@@ -99,30 +100,35 @@
         <h2>Interesse in gepersonaliseerd bloemwerk?</h2>
         <p>Stuur me gerust een bericht</p>
 
-        <div>
+        <div class="contact">
           <h2>Contactformulier</h2>
 
-          <label for="Name">Uw Naam</label>
-          <input type="text" />
-          <label for="E-mail">Uw e-mailadres</label>
-          <input type="email" />
-          <label for="Phone">Uw telefoonnumer</label>
-          <input type="tel" />
-          <label for="Date">Datum van de Gelegenheid</label>
-          <input type="date" />
-          <label for="Info">Extra informatie</label>
-          <input type="text" />
+          <form action="">
+            <label for="Name">Uw Naam</label>
+            <input type="text" />
+            <label for="E-mail">Uw e-mailadres</label>
+            <input type="email" />
+            <label for="Phone">Uw telefoonnumer</label>
+            <input type="tel" />
+            <label for="Date">Datum van de Gelegenheid</label>
+            <input type="date" />
+            <label for="Info">Extra informatie</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <a class="contact__send" href="">verzenden</a>
+          </form>
 
-          <h2>Rechtstreeks contact</h2>
-          <p>
-            Je kan me ook Rechtstreeks contacteren op
-            <a href="tel:+324 74 99 23 45">04 74 99 23 45</a> of via e-mail op
-            <a href="mailto:lievecortier@ailiv.be">lievecortier@ailiv.be</a>
-          </p>
+          <div class="contact--allign">
+            <h2>Rechtstreeks contact</h2>
+            <p>
+              Je kan me ook Rechtstreeks contacteren op
+              <a href="tel:+324 74 99 23 45">0474 99 23 45</a> of via e-mail op
+              <a href="mailto:lievecortier@ailiv.be">lievecortier@ailiv.be</a>
+            </p>
+          </div>
         </div>
       </article>
 
-      <article>
+      <article class="a--allign">
         <h2>Bestel uw boeket via de webshop</h2>
         <p>
           Gevarieerd aanbod plukverse handgebonden seizoensboeketten volgens
@@ -136,32 +142,79 @@
           <p>💳 Online betalen met kredietkaart</p>
         </div>
 
-        <figure class="f__boeket">
-          <a href="">
-            <img src="_static/images/small-boeket.png" alt="een klein boeket" />
-            <figcaption>Boeket small</figcaption>
-          </a>
-          <span>€ 30</span>
-        </figure>
+        <div class="boeket">
+          <figure>
+            <a href="">
+              <img
+                src="_static/images/small-boeket.png"
+                alt="een klein boeket"
+              />
+              <figcaption>Boeket small</figcaption>
+            </a>
+            <span>€ 30</span>
+          </figure>
 
-        <figure>
-          <a href="">
-            <img
-              src="_static/images/medium-boeket.png"
-              alt="een medium boeket"
-            />
-            <figcaption>Seizoensdecoratie</figcaption> </a
-          ><span>€ 40</span>
-        </figure>
+          <figure>
+            <a href="">
+              <img
+                src="_static/images/medium-boeket.png"
+                alt="een medium boeket"
+              />
+              <figcaption>Boeket medium</figcaption> </a
+            ><span>€ 40</span>
+          </figure>
 
-        <figure>
-          <a href="">
-            <img src="_static/images/large-boeket.png" alt="een groot boeket" />
-            <figcaption>Rouwwerk op maat</figcaption>
-          </a>
-          <span>€ 50</span>
-        </figure>
+          <figure>
+            <a href="">
+              <img
+                src="_static/images/large-boeket.png"
+                alt="een groot boeket"
+              />
+              <figcaption>Boeket groot</figcaption>
+            </a>
+            <span>€ 50</span>
+          </figure>
+        </div>
       </article>
     </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="">Gepersonaliseerd bloemwerk</a
+          ><span class="footer__dash"> -</span>
+        </li>
+        <li>
+          <a href="">Trouwboeketten</a><span class="footer__dash"> -</span>
+        </li>
+        <li>
+          <a href="">Seizoensdecoratie</a><span class="footer__dash"> -</span>
+        </li>
+        <li>
+          <a href="">Rouwwerk op maat</a><span class="footer__dash"> -</span>
+        </li>
+        <li>
+          <a href="">Aankleding op locatie</a
+          ><span class="footer__dash"> -</span>
+        </li>
+        <li><a href="">Webshop</a><span class="footer__dash"> -</span></li>
+        <li><a href="">Contact</a><span class="footer__dash"> -</span></li>
+        <li class="button"><a href="">gsm</a> 0474 99 23 45</li>
+        <li class="button"><a href="">e-mail</a> lievecortier@ailiv.be</li>
+      </ul>
+
+      <p>
+        Copyright © 2020 Ailiv, Lieve Cortier. Alle rechten voorbehouden. –
+        Grootmoers 3, 8730 Oedelem – Ondernemingsnummer 0749.728.044
+      </p>
+
+      <div class="footer__bottom">
+        <p><a href="">Algemene voorwaarden</a></p>
+        <p><a href="">Beheer cookies</a></p>
+        <p>
+          Deze website werd met trots gemaakt door <a href="">De Formatie</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
