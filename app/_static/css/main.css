@@ -60,10 +60,6 @@ ul {
   list-style: none;
 }
 
-header {
-  padding: 1rem;
-}
-
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +74,7 @@ header {
 .h__images {
   display: flex;
   flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .header__info {
@@ -297,7 +294,20 @@ article img {
   text-align: center;
 }
 
+.fullList {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+}
 
+.basket-aside {
+  display: none;
+}
+
+.fill-basket {
+  display: block;
+}
 
 footer {
   background-color: #00372b;
