@@ -63,6 +63,12 @@ header {
   padding: 1rem;
 }
 
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header__info,
 .header__links,
 .h__images {
@@ -129,7 +135,8 @@ article:nth-child(2) {
   padding-top: 2rem;
 }
 
-.intro p:last-child {
+.final-p {
+  /* 100% for first item*/
   width: 7rem;
   padding-bottom: 2rem;
 }
@@ -152,8 +159,24 @@ article:nth-child(2) {
   color: #c11462;
 }
 
-.js__flowers {
-  padding-top: 5rem;
+.flowers {
+  padding-top: 5rem; 
+}
+
+.flowers-flex {
+  justify-content: space-between;
+  margin: 2rem;
+  width: 25rem;
+}
+
+.flowers img {
+  width: 10rem;
+}
+
+.flowers a {
+  font-family: "Bilingual Serif Font";
+  text-decoration-color: #ee4f96;
+  color: #c11462;
 }
 
 .a__green {
