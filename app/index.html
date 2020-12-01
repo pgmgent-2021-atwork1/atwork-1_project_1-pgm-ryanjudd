@@ -7,6 +7,62 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="basket-aside">
+      <div class="basket-top flex">
+        <h2>uw winkelmandje</h2>
+        <svg
+          class="svg__cross"
+          width="18px"
+          height="18px"
+          viewBox="0 0 18 18"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>Close Icon</title>
+          <desc>Created with Sketch.</desc>
+          <g
+            id="Wireframes-+-Mobile"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g id="Home-Copy-2" transform="translate(-1016.000000, -55.000000)">
+              <g id="Close-Icon" transform="translate(1016.000000, 55.000000)">
+                <rect
+                  id="Rectangle"
+                  fill-opacity="0"
+                  fill="#9EA0A5"
+                  x="0"
+                  y="0"
+                  width="18"
+                  height="18"
+                ></rect>
+                <polygon
+                  id="Path"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  points="9 7.58578644 16.0710678 0.514718626 17.4852814 1.92893219 10.4142136 9 17.4852814 16.0710678 16.0710678 17.4852814 9 10.4142136 1.92893219 17.4852814 0.514718626 16.0710678 7.58578644 9 0.514718626 1.92893219 1.92893219 0.514718626 9 7.58578644"
+                ></polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="">
+        <div>
+          <img src="_static/images/medium-boeket.png" alt="" />
+          <span>Boeket Medium</span>
+          <span>€50</span>
+          <p><span>kleur: </span>rood</p>
+          <p><span>Vaas bijstellen: </span>nee</p>
+          <p><span>Bindwijze: </span>Kortgebonden stelen</p>
+          <span>Verwijderen</span>
+        </div>
+      </div>
+    </div>
+
     <header>
       <ul class="header__info">
         <li>gsm <a href="">0474 99 23 45</a></li>
@@ -46,40 +102,42 @@
       </div>
       <nav>
         <ul class="header__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gepersonaliseerd-bloemwerk.html">Gepersonaliseerd bloemwerk</a></li>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li>
+            <a href="gepersonaliseerd-bloemwerk.html"
+              >Gepersonaliseerd bloemwerk</a
+            >
+          </li>
           <li><a href="">Trouwboeketten</a></li>
           <li><a href="seizonsdecoratie.html">Seizoensdecoratie</a></li>
           <li><a href="">Rouwwerk</a></li>
           <li><a href="">Aankleding</a></li>
           <li><a href="webshop.html">Webshop</a></li>
-          <li class="basket">Winkelmandje</li>
         </ul>
+        <p class="basket">Winkelmandje</p>
       </nav>
     </header>
 
     <main>
-      <aside class="basket-aside">
-        <div class="">Basket test
-        </div>
-      </aside>
       <article class="intro">
         <img
           class="i__img"
           src="https://uploads-ssl.webflow.com/5f5248794bbeccf44d459b82/5f64643644b5d8fdfc9192bf_ailiv-headingfoto.png"
           alt=""
         />
-        <h1>Bloemen maken alles intenser</h1>
-        <p>
-          We zijn van nature geprogrammeerd om één te zijn met de natuur.
-          Gelukkig zijn er bloemen die elke emotie en bijzonder moment nog
-          intenser maken. Ik vind het een hele eer om een verbindende rol te
-          kunnen spelen tussen de bloemen en het leven van mijn klanten.
-        </p>
-        <p class="i__final-p">Fleurige groet Lieve Cortier</p>
+        <div class="i__flex-left">
+          <h1>Bloemen maken alles intenser</h1>
+          <p>
+            We zijn van nature geprogrammeerd om één te zijn met de natuur.
+            Gelukkig zijn er bloemen die elke emotie en bijzonder moment nog
+            intenser maken. Ik vind het een hele eer om een verbindende rol te
+            kunnen spelen tussen de bloemen en het leven van mijn klanten.
+          </p>
+          <p class="i__final-p">Fleurige groet Lieve Cortier</p>
+        </div>
       </article>
 
-      <article>
+      <article class="art-2">
         <img
           class="a__img"
           src="https://uploads-ssl.webflow.com/5f5248796f0e6e75b273d0e2/5f5b8024ced880280e44b5b7_bloemwerkopmaat-p-500.jpeg"
@@ -127,7 +185,7 @@
         </div>
       </article>
 
-      <article>
+      <article class="art-2">
         <img
           class="a__img"
           src="https://uploads-ssl.webflow.com/5f5248796f0e6e75b273d0e2/5f5b6968cd06f94a7eba28a6_marc-babin-ecGZWPOvya0-unsplash-p-500.jpeg"
@@ -184,66 +242,14 @@
         </div>
       </article>
 
-      <article>
-        <img
-          class="a__img"
-          src="../app/_static/images/seizoen.jpeg"
-          alt="Foto voor seizoen bloemen"
-        />
-        <div class="a--allign a__green">
-          <h2>Bloemen voor elk seizoen</h2>
-          <p>Seizoensgebonden decortatie bij u thuis of in uw zaak</p>
+      <article class="art-1">
+        <div>
+          <h2>Bestel uw boeket via de webshop</h2>
           <p>
-            Ontdek
-            <a class="button" href=""
-              >seizoensdecoratie
-              <svg
-                class="svg__arrow"
-                xmlns="http://www.w3.org/2000/svg"
-                width="7.219"
-                height="7.633"
-                viewBox="0 0 7.219 7.633"
-              >
-                <g
-                  id="Icon_feather-arrow-right"
-                  data-name="Icon feather-arrow-right"
-                  transform="translate(-7 -6.793)"
-                >
-                  <path
-                    id="Path_56"
-                    data-name="Path 56"
-                    d="M7.5,18h6.219"
-                    transform="translate(0 -7.391)"
-                    fill="none"
-                    stroke="#fff8e1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
-                  />
-                  <path
-                    id="Path_57"
-                    data-name="Path 57"
-                    d="M18,7.5l3.109,3.109L18,13.719"
-                    transform="translate(-7.391)"
-                    fill="none"
-                    stroke="#fff8e1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
-                  />
-                </g>
-              </svg>
-            </a>
+            Gevarieerd aanbod plukverse handgebonden seizoensboeketten volgens
+            marktaanbod.
           </p>
         </div>
-      </article>
-
-      <article>
-        <h2>Bestel uw boeket via de webshop</h2>
-        <p>
-          Gevarieerd aanbod plukverse handgebonden seizoensboeketten volgens
-          marktaanbod.
-        </p>
 
         <div class="div__info">
           <p>🗓 Bestellen voor donderdag 16 u</p>
@@ -259,8 +265,9 @@
                 src="_static/images/small-boeket.png"
                 alt="een klein boeket"
               />
-              <figcaption>Boeket small </figcaption>
-            </a> <span>€ 30</span>
+              <figcaption>Boeket small</figcaption>
+            </a>
+            <span>€ 30</span>
           </figure>
 
           <figure>
@@ -269,8 +276,8 @@
                 src="_static/images/medium-boeket.png"
                 alt="een medium boeket"
               />
-              <figcaption>Seizoensdecoratie</figcaption>
-            </a><span>€ 40</span>
+              <figcaption>Seizoensdecoratie</figcaption> </a
+            ><span>€ 40</span>
           </figure>
 
           <figure>
@@ -280,7 +287,8 @@
                 alt="een groot boeket"
               />
               <figcaption>Rouwwerk op maat</figcaption>
-            </a> <span>€ 50</span>
+            </a>
+            <span>€ 50</span>
           </figure>
         </div>
       </article>
@@ -317,8 +325,10 @@
       </p>
 
       <div class="footer__bottom">
-        <p><a href="">Algemene voorwaarden</a></p>
-        <p><a href="">Beheer cookies</a></p>
+        <div class="flex footer__flex">
+          <p><a href="">Algemene voorwaarden</a></p>
+          <p><a href="">Beheer cookies</a></p>
+        </div>
         <p>
           Deze website werd met trots gemaakt door <a href="">De Formatie</a>
         </p>

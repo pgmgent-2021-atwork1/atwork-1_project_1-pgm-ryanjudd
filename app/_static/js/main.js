@@ -5,13 +5,15 @@
       console.log("1. Application started!");
       this.cacheElements();
       this.onClickList();
-      this.onClickBasket();
+      this.onClickOpenBasket();
+      this.onClickCloseBasket();
     },
     cacheElements() {
       this.$burger = document.querySelector(".svg__burger");
       this.$list = document.querySelector(".header__links");
       this.$basket = document.querySelector(".basket");
       this.$basketAside = document.querySelector(".basket-aside");
+      this.$cross = document.querySelector('.svg__cross');
     },
     onClickList() {
       this.$burger.addEventListener("click", () => {
@@ -24,7 +26,7 @@
         }
       });
     },
-    onClickBasket() {
+    onClickOpenBasket() {
       this.$basket.addEventListener("click", () => {
         console.log("Basket click werkt");
 
@@ -32,6 +34,14 @@
 
       });
     },
+
+    onClickCloseBasket() {
+      this.$cross.addEventListener('click', () => {
+        console.log('Basket close');
+
+        this.$basketAside.classList.remove('fill-basket');
+      });
+    }
     
   };
   app.initialize();
