@@ -90,7 +90,7 @@
       const urlType = params.get('type');
 
       if (urlType !== null) {
-        console.log("Type loaing works");
+        console.log("Type loading works");
 
         let typeItem = "";
         let typeStr = "";

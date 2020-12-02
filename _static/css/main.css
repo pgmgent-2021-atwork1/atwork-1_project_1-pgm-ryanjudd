@@ -333,12 +333,27 @@ article img {
 }
 
 .basket,
-.basket-send {
+.basket-send,
+.add-basket{
   background-color: #00372b;
   color: #fff;
   padding: .5rem;
   border-radius: .7rem;
   text-decoration: none;
+}
+
+.add-basket {
+  width: 80%;
+  display: block;
+  text-align: center;
+  text-transform: none;
+}
+
+.basket-send {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 
@@ -461,6 +476,74 @@ article img {
   padding-right: 1rem;
 }
 
+#typeLoader {
+  text-align: center;
+}
+
+.boeket-width {
+  max-width: 30rem;
+}
+
+#typeLoader img {
+  width: 100%;
+}
+
+.div-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.option {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  width: 30rem;
+}
+
+.option label {
+  width: 100%;
+}
+
+.option select,
+.option input {
+ width: 80%;
+ padding: .5rem;
+ border: solid .1rem #E4E4E4;
+ background-color: #F3F3F3;
+}
+
+.option input {
+  text-align: center;
+  background-color: #fff;
+}
+
+.boeket--align {
+  margin: 4rem;
+}
+
+.boeket--align h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+
+.Webshop-type-price {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: solid .1rem;
+  color: #668780;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 footer {
   background-color: #00372b;
@@ -550,6 +633,11 @@ footer li:nth-last-child(-n + 2) a {
     right: 0;
     box-shadow: 0rem 0rem 0rem 150rem rgba(51, 51, 51, 0.84); 
   }
+
+  #typeLoader img {
+    width: 30rem;
+  }
+  
 }
 
 @media (min-width: 45rem) {
@@ -656,7 +744,7 @@ footer li:nth-last-child(-n + 2) a {
     text-align: left;
   }
 
-
+  
 
 
 
