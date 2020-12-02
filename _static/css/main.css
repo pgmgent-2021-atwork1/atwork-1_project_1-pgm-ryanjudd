@@ -118,6 +118,19 @@ ul {
   width: 3rem;
 }
 
+.button-top {
+  position: fixed;
+  right: 5rem;
+  bottom: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+}
+
+.top-arrow {
+  rotate: -90deg;
+}
+
 article {
   text-align: center;
   padding-bottom: 2rem;
@@ -676,7 +689,6 @@ footer li:nth-last-child(-n + 2) a {
 
   .a__img {
     width: 20rem;
-    
   }
 
   .art-2,
