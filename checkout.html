@@ -7,6 +7,74 @@
     <link rel="stylesheet" href="_static/css/main.css" />
   </head>
   <body>
+    <div class="basket-aside">
+      <div class="basket-top flex">
+        <h2>uw winkelmandje</h2>
+        <svg
+          class="svg__cross"
+          width="18px"
+          height="18px"
+          viewBox="0 0 18 18"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>Close Icon</title>
+          <desc>Created with Sketch.</desc>
+          <g
+            id="Wireframes-+-Mobile"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g id="Home-Copy-2" transform="translate(-1016.000000, -55.000000)">
+              <g id="Close-Icon" transform="translate(1016.000000, 55.000000)">
+                <rect
+                  id="Rectangle"
+                  fill-opacity="0"
+                  fill="#9EA0A5"
+                  x="0"
+                  y="0"
+                  width="18"
+                  height="18"
+                ></rect>
+                <polygon
+                  id="Path"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  points="9 7.58578644 16.0710678 0.514718626 17.4852814 1.92893219 10.4142136 9 17.4852814 16.0710678 16.0710678 17.4852814 9 10.4142136 1.92893219 17.4852814 0.514718626 16.0710678 7.58578644 9 0.514718626 1.92893219 1.92893219 0.514718626 9 7.58578644"
+                ></polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <div class="item flex">
+          <img src="_static/images/medium-boeket.png" alt="" />
+          <div>
+            <p>Boeket Medium</p>
+            <span>€50</span>
+            <p><span>kleur: </span>rood</p>
+            <p><span>Vaas bijstellen: </span>nee</p>
+            <p><span>Bindwijze: </span>Kortgebonden stelen</p>
+            <span>Verwijderen</span>
+          </div>
+          <input class="item__amount" type="number" name="" id="" value="1">
+        </div>
+      </div>
+      <div class="basket-bottom">
+        <div class="flex">
+          <p>Subtotal</p>
+          <p><b>€50</b></p>
+        </div>
+        <div>
+          <a class="basket-send" href="checkout.html">Naar betalen</a>
+        </div>
+      </div>
+    </div>
+
     <header>
       <ul class="header__info">
         <li>gsm <a href="">0474 99 23 45</a></li>
@@ -46,84 +114,84 @@
       </div>
       <nav>
         <ul class="header__links">
-          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="index.html">Home</a></li>
           <li>
             <a href="gepersonaliseerd-bloemwerk.html"
               >Gepersonaliseerd bloemwerk</a
             >
           </li>
           <li><a href="">Trouwboeketten</a></li>
-          <li><a href="seizonsdecoratie.html">Seizoensdecoratie</a></li>
+          <li><a href="seizoensdecoratie.html">Seizoensdecoratie</a></li>
           <li><a href="">Rouwwerk</a></li>
           <li><a href="">Aankleding</a></li>
           <li><a href="webshop.html">Webshop</a></li>
-          <li><a href="">Winkelmandje</a></li>
         </ul>
+        <p class="basket">Winkelmandje</p>
       </nav>
     </header>
 
-    <main>
-      <div>
-        <h3>Overzicht van uw besteling</h3>
+    <main class="background-grey">
+      <div class="checkout-box">
+        <h2>Overzicht van uw besteling</h2>
         <div></div>
       </div>
-      <div>
-        <h3>Klanteninformatie</h3>
-        <div>
+      <div class="checkout-box">
+        <h2>Klanteninformatie</h2>
+        <div class="checkout-box__inside">
           <label for="E-mail">Email *</label>
-          <input type="email" required />
+          <input class="checkout__input" type="email" required />
         </div>
       </div>
-      <div>
-        <h3>verzendadres</h3>
-        <div>
+      <div class="checkout-box">
+        <h2>verzendadres</h2>
+        <div class="checkout-box__inside">
           <label for="Name">Naam *</label>
-          <input type="text" />
+          <input class="checkout__input" type="text" required/>
           <label for="Adress">Adres *</label>
-          <input type="text" />
-          <input type="text" />
-          <label for="State">Gemeente</label>
-          <input type="text" />
+          <input class="checkout__input" type="text" required/>
+          <input class="checkout__input" type="text" />
+          <label for="State">Gemeente *</label>
+          <input class="checkout__input" type="text" required/>
           <label for="Province">Provincie</label>
-          <input type="text" />
+          <input class="checkout__input" type="text" />
           <label for="zip">Postcode *</label>
-          <input type="number" />
+          <input class="checkout__input" type="text"  required/>
           <label for="Country">Land *</label>
-          <input type="text" />
+          <input class="checkout__input" type="text" value="Belgium" required/>
         </div>
       </div>
-      <div>
-        <h3>Afhalen of Thuislevering</h3>
-        <div>
+      <div class="checkout-box">
+        <h2>Afhalen of Thuislevering</h2>
+        <div class="checkout-box__inside box-text-center">
           <p>No Shipping methods are available for the adress given.</p>
         </div>
       </div>
-      <div>
-        <h3>Gepersonaliseerd boodschap</h3>
-        <div>
+      <div class="checkout-box">
+        <h2>Gepersonaliseerd boodschap</h2>
+        <div class="checkout-box__inside">
           <label for="from">Van</label>
-          <input type="text" />
+          <input class="checkout__input" type="text" />
           <label for="message">Boodschap</label>
-          <input type="text" />
-          <input type="checkbox" name="anonymous" id="" /> <span>Anoniem</span>
+          <input class="checkout__input" type="text" />
+          <input class="checkout__checkbox" type="checkbox" name="anonymous" id="" /> <span>Anoniem</span>
         </div>
       </div>
-      <div>
-        <h3>Betaling met kredietkaart</h3>
-        <div>
+      <div class="checkout-box">
+        <h2>Betaling met kredietkaart</h2>
+        <div class="checkout-box__inside">
           <label for="cardnumber">Kaartnummer *</label>
-          <input type="number" />
-          <label for="expiration-date">Vervaldatum</label>
-          <input type="date" />
+          <input class="checkout__input" type="number" required/>
+          <label for="expiration-date">Vervaldatum *</label>
+          <input class="checkout__input" type="date" required/>
           <label for="safty-code">Veiligheidscode *</label>
-          <input type="text" />
-          <input type="checkbox" name="billingAdres" id="" />
+          <input class="checkout__input" type="text" required/>
+          <input class="checkout__input" type="checkbox" name="billingAdres" id="" />
           <span>Facturatieadres is hetzelfde als leveringsadres</span>
         </div>
       </div>
-      <div>
-        <h3>Overzicht</h3>
-        <div>
+      <div class="checkout-box">
+        <h2>Overzicht</h2>
+        <div class="checkout-box__inside">
           <h4>Subtotaal</h4>
           <h4>Totaal</h4>
         </div>
@@ -162,12 +230,17 @@
       </p>
 
       <div class="footer__bottom">
-        <p><a href="">Algemene voorwaarden</a></p>
-        <p><a href="">Beheer cookies</a></p>
+        <div class="flex footer__flex">
+          <p><a href="">Algemene voorwaarden</a></p>
+          <p><a href="">Beheer cookies</a></p>
+        </div>
         <p>
           Deze website werd met trots gemaakt door <a href="">De Formatie</a>
         </p>
       </div>
     </footer>
+
+    <script src="_static/js/data.js"></script>
+    <script src="_static/js/main.js"></script>
   </body>
 </html>

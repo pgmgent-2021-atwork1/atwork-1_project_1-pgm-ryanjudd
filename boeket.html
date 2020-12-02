@@ -7,6 +7,73 @@
     <link rel="stylesheet" href="_static/css/main.css" />
   </head>
   <body>
+    <div class="basket-aside">
+      <div class="basket-top flex">
+        <h2>uw winkelmandje</h2>
+        <svg
+          class="svg__cross"
+          width="18px"
+          height="18px"
+          viewBox="0 0 18 18"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>Close Icon</title>
+          <desc>Created with Sketch.</desc>
+          <g
+            id="Wireframes-+-Mobile"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g id="Home-Copy-2" transform="translate(-1016.000000, -55.000000)">
+              <g id="Close-Icon" transform="translate(1016.000000, 55.000000)">
+                <rect
+                  id="Rectangle"
+                  fill-opacity="0"
+                  fill="#9EA0A5"
+                  x="0"
+                  y="0"
+                  width="18"
+                  height="18"
+                ></rect>
+                <polygon
+                  id="Path"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  points="9 7.58578644 16.0710678 0.514718626 17.4852814 1.92893219 10.4142136 9 17.4852814 16.0710678 16.0710678 17.4852814 9 10.4142136 1.92893219 17.4852814 0.514718626 16.0710678 7.58578644 9 0.514718626 1.92893219 1.92893219 0.514718626 9 7.58578644"
+                ></polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <div class="item flex">
+          <img src="_static/images/medium-boeket.png" alt="" />
+          <div>
+            <p>Boeket Medium</p>
+            <span>€50</span>
+            <p><span>kleur: </span>rood</p>
+            <p><span>Vaas bijstellen: </span>nee</p>
+            <p><span>Bindwijze: </span>Kortgebonden stelen</p>
+            <span>Verwijderen</span>
+          </div>
+          <input class="item__amount" type="number" name="" id="" value="1">
+        </div>
+      </div>
+      <div class="basket-bottom">
+        <div class="flex">
+          <p>Subtotal</p>
+          <p><b>€50</b></p>
+        </div>
+        <div>
+          <a class="basket-send" href="checkout.html">Naar betalen</a>
+        </div>
+      </div>
+    </div>
     <header>
       <ul class="header__info">
         <li>gsm <a href="">0474 99 23 45</a></li>
@@ -53,37 +120,54 @@
             >
           </li>
           <li><a href="">Trouwboeketten</a></li>
-          <li><a href="seizonsdecoratie.html">Seizoensdecoratie</a></li>
+          <li><a href="seizoensdecoratie.html">Seizoensdecoratie</a></li>
           <li><a href="">Rouwwerk</a></li>
           <li><a href="">Aankleding</a></li>
           <li><a href="webshop.html">Webshop</a></li>
-          <li><a href="">Winkelmandje</a></li>
         </ul>
+        <p class="basket">Winkelmandje</p>
       </nav>
     </header>
 
     <main>
-      <img src="_static/images/medium-boeket.png" alt="">
+      <div id="typeLoader"></div>
+
+      <!-- <img src="_static/images/medium-boeket.png" alt="" />
       <div>
         <h1>Boeket medium</h1>
-        <Span>€ 40</Span>
+        <span>€ 40</span> -->
         <div>
           <label for="colour">Kleur</label>
-          <select name="choise" id="">Keuze: Kleur</select>
+          <select name="choise" id="">
+            Keuze: Kleur
+          </select>
           <label for="vase">Vaas bijstellen</label>
-          <select name="choise" id="">Keuze: Vaas bijstellen</select>
+          <select name="choise" id="">
+            Keuze: Vaas bijstellen
+          </select>
           <label for="packaging">Binwijze</label>
-          <select name="choise" id="">Keuze: Bindwijze</select>
+          <select name="choise" id="">
+            Keuze: Bindwijze
+          </select>
           <label for="amount">Aantal</label>
-          <input type="number" name="" id="">
+          <input type="number" name="" id="" />
           <a href="">Voeg toe aan winkelmanje</a>
         </div>
       </div>
       <div>
         <h2>Hoe een boeket langer bewaren?</h2>
-        <p>Zorg er altijd voor dat je vaas brandschoon is en snijd de stelen van de bloemen onderaan ook best na een viertal dagen eens schuin af met een mesje terwijl je het water ververst. Indien gewenst kan het meegeleverde bloemenvoedsel aan het water toegevoegd worden.</p>
+        <p>
+          Zorg er altijd voor dat je vaas brandschoon is en snijd de stelen van
+          de bloemen onderaan ook best na een viertal dagen eens schuin af met
+          een mesje terwijl je het water ververst. Indien gewenst kan het
+          meegeleverde bloemenvoedsel aan het water toegevoegd worden.
+        </p>
         <h2>Verzorgingstips in water</h2>
-        <p>Zorg ervoor dat er geen dorre blaadjes in het water terechtkomen , want die geven bacteriën . Gebruik bij voorkeur leidingwater en voeg eventueel een klein druppeltje javel toe .</p>
+        <p>
+          Zorg ervoor dat er geen dorre blaadjes in het water terechtkomen ,
+          want die geven bacteriën . Gebruik bij voorkeur leidingwater en voeg
+          eventueel een klein druppeltje javel toe .
+        </p>
       </div>
     </main>
 
@@ -118,12 +202,17 @@
       </p>
 
       <div class="footer__bottom">
-        <p><a href="">Algemene voorwaarden</a></p>
-        <p><a href="">Beheer cookies</a></p>
+        <div class="flex footer__flex">
+          <p><a href="">Algemene voorwaarden</a></p>
+          <p><a href="">Beheer cookies</a></p>
+        </div>
         <p>
           Deze website werd met trots gemaakt door <a href="">De Formatie</a>
         </p>
       </div>
     </footer>
+
+    <script src="_static/js/data.js"></script>
+    <script src="_static/js/main.js"></script>
   </body>
 </html>
