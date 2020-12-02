@@ -245,6 +245,10 @@ article img {
 .div__info {
   font-size: 0.8rem;
   padding: 1rem;
+  background-image: url(/_static/images/svg/green-loop.svg);
+  background-repeat: no-repeat;
+  background-position-x: -2rem;
+  background-position-y: -2rem;
 }
 
 .boeket a,
